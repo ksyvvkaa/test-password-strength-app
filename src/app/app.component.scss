@@ -1,0 +1,51 @@
+.app {
+  display: grid;
+  align-content: start;
+  justify-content: center;
+  height: 100vh;
+  background-color: #b19dab;
+  font-family:"Pt Sans", helvetica, sans-serif;
+  font-size: small;
+
+  &__title {
+    margin: 0;
+    padding-block: 30px;
+    color: #363235;
+    text-align: center;
+  }
+
+  &__form {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+    height: 200px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: #e6d7e2;
+  }
+
+  &__field {
+    box-sizing: border-box;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    border:none;
+    outline:none;
+    border-radius:22px;
+    line-height:1.6em;
+    font-size:1.5em;
+  }
+
+  &__strength {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__strength-section {
+    width: 80px;
+    height: 8px;
+    border-radius: 5px;
+  }
+}
