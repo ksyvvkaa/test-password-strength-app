@@ -1,11 +1,5 @@
 .app {
-  display: grid;
-  align-content: start;
-  justify-content: center;
-  height: 100vh;
-  background-color: #b19dab;
-  font-family:"Pt Sans", helvetica, sans-serif;
-  font-size: small;
+  padding-inline: 20px;
 
   &__title {
     margin: 0;
@@ -19,21 +13,25 @@
     align-content: center;
     justify-content: center;
 
+    margin-inline: auto;
+    padding-inline: 10px;
     height: 200px;
-    width: 500px;
+    max-width: 500px;
     border-radius: 10px;
     background-color: #e6d7e2;
   }
 
   &__field {
     box-sizing: border-box;
-    width: 300px;
-    height: 40px;
     margin-bottom: 20px;
     padding: 0 20px;
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
     border:none;
     outline:none;
     border-radius:22px;
+
     line-height:1.6em;
     font-size:1.5em;
   }

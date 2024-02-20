@@ -27,9 +27,9 @@ export class AppComponent {
   minPasswordLength = 8;
 
   getPasswordStrength(): Strength {
-    const hasLetters = /[a-zA-Z]/.test(this.password);
+    const hasLetters = this.password.split('').some(char => char.toLocaleLowerCase() !== char.toLocaleUpperCase());
     const hasDigits = /\d/.test(this.password);
-    const hasSymbols = /[!@#$%^&*(),.?":{}|<>]/.test(this.password);
+    const hasSymbols = /[!@#$%^&*()_+\-=\{\}\[\]|\\:;"'<>,.?/]/.test(this.password);
 
     if ((!hasLetters && !hasDigits)
       || (!hasDigits && !hasSymbols)
